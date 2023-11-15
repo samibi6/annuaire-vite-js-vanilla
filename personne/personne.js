@@ -21,9 +21,12 @@ const detailsPersonne = () => {
         <img src="${personne.avatar}" class="card-img-top" alt="avatar de ${personne.prenom} ${personne.nom}">
         <div class="card-body">
           <h5 class="card-title">${personne.prenom} ${personne.nom}</h5>
-          <p class="card-text">
-            ...
-          </p>
+          <p class="card-text">${personne.description}</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Date de naisssance: ${personne.date_de_naissance}</li>
+            <li class="list-group-item">Tel: ${personne.numero_de_telephone}</li>
+            <li class="list-group-item">Email: ${personne.adresse_email}</li>
+          </ul>
         </div>
       </div>
     `;
